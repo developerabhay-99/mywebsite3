@@ -32,3 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkVisibility);
   checkVisibility(); // Run once to check elements already in view
 });
+// Lazy loading images
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+
+    images.forEach((img) => {
+        img.onload = () => img.classList.add('loaded');
+    });
+});
