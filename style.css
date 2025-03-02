@@ -254,7 +254,7 @@ p {
 
 .moments-border-image {
   position: absolute;
-  top: -60px; /* Moves the image down to sit on the border */
+  top: -80px; /* Moves the image down to sit on the border */
   left: 50%;
   transform: translateX(-50%); /* Centers the image */
   width: 140px; /* Adjust the size as needed */
